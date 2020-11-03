@@ -1,0 +1,37 @@
+html, body { margin: 0; padding: 0; height: 100%; }
+select, input, label::before, textarea { outline: none; box-shadow:none !important; border: 1px solid #ccc !important; }
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus { outline: none; box-shadow:none !important; }
+th.sticky-top { top: -2px !important; }
+.pointer { cursor: pointer; }
+.dropdown.autoexpand:hover>.dropdown-menu { display: block; }
+[tooltip] { position: relative; }
+[tooltip]::before {
+  content: attr(tooltip); font-size: smaller; text-align: center;
+        display: inline-block; position: absolute; bottom: 50%; right: -10em;
+  background: #333; color: #FFF; padding: 5px; border-radius: 5px;
+  opacity:0; transition:0.3s; z-index: 99999; padding: 0.2em 0.8em;
+  pointer-events: none; max-width: 25em; white-space: normal; min-width: 15em;
+}
+[tooltip]:hover::before { opacity:1; bottom: 100%; }
+code, pre, .pre, .CodeMirror {
+  font-size: 13px;
+  font-family: Menlo, Consolas, Courier, monospace !important;
+  border-radius: 0.3em;
+  color: #6c757d !important;
+  background: #e5e5e5 !important;
+  font-weight: bold;
+  font-size: 13px !important;
+  line-height: 15px !important;
+  overflow: auto !important;
+}
+.bg-lavender { background-color: #e6e6fa; }
+
+.CodeMirror {
+  height: 100% !important;
+  max-height: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.CodeMirror-selected { background: #ccc !important; }
+.CodeMirror pre { background: transparent !important; }
