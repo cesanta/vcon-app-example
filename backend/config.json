@@ -1,6 +1,6 @@
 {
   "vcon_api_key": "test",
-  "listening_port": 8080,
+  "listening_port": 8000,
   "logins": [
     {"user": "test", "pass": "test", "token": "lzxjc938958sxcmas"},
     {"user": "Joe", "pass": "Bloggs", "token": "24782fd12382XZhauRldsn18"}
